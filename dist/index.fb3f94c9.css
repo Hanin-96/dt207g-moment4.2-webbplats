@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fdfbf8;
+  width: 100%;
+  max-width: 1920px;
+  font-family: Inter, sans-serif;
+}
+
+nav {
+  width: 100%;
+  max-width: 30rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+nav ul {
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: #222;
+  text-decoration: none;
+}
+
+nav ul li:hover, #active {
+  border-bottom: 2px solid;
+}
+
+main {
+  margin: 0 2rem;
+  padding: 2rem;
+}
+
+section {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+h1 {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 3.6rem;
+}
+
+label {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  display: block;
+}
+
+input {
+  border: 2px solid #222;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+input:last-child {
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #fdac8e;
+  border: none;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  transition: all .2s ease-in;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: coral;
+}
+
+.message-link {
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=index.fb3f94c9.css.map */

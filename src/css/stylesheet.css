@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    max-width: 1920px;
+    width: 100%;
+    background-color: rgb(253, 251, 248);
+}
+
+/*Navbar*/
+
+nav {
+    max-width: 30rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid;
+}
+
+#active {
+    border-bottom: 2px solid;
+}
+
+/*Main content*/
+
+main {
+    padding: 2rem;
+    margin: 0 2rem;
+}
+
+section {
+    max-width: 30rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.6rem;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+label {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+input {
+    font-size: 1.8rem;
+    width: 100%;
+    border: 2px solid rgb(34, 34, 34);
+}
+
+input:last-child {
+    margin-bottom: 2rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgb(253, 172, 142);
+    border: none;
+    margin-bottom: 1rem;
+    transition: all ease-in 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: coral;
+}
+
+.message-link {
+    font-size: 1.6rem;
+}
