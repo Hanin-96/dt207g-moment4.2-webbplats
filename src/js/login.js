@@ -29,12 +29,12 @@ async function login(event) {
             })
         });
         const data = await response.json();
-        //console.log(data);
+        console.log(data);
         if (response.ok) {
             //Redirect till startsida
             
-            localStorage.setItem('token', data.token);
-            window.location.replace("http://localhost:1234/secretpage.html");
+            localStorage.setItem('token', data.response.token);
+            window.location.replace("/users.html");
         } else {
             document.getElementById("error-login").innerHTML = "Det går inte att logga in, fel användarnamn/lösenord";
         }
