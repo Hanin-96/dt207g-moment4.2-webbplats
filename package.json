@@ -2,7 +2,7 @@
   "name": "moment4.2-webbplats",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
+  "source": ["src/index.html", "src/users.html"],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
