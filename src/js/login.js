@@ -18,7 +18,7 @@ async function login(event) {
 
     //Fetch anrop för att logga in
     try {
-        const response = await fetch("http://192.168.0.137:3000/login", {
+        const response = await fetch("https://dt207g-moment4-1.onrender.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -32,8 +32,8 @@ async function login(event) {
         console.log(data);
         if (response.ok) {
             //Redirect till startsida
-            
             localStorage.setItem('token', data.response.token);
+            localStorage.setItem('username', userNameInput);
             window.location.replace("/users.html");
         } else {
             document.getElementById("error-login").innerHTML = "Det går inte att logga in, fel användarnamn/lösenord";

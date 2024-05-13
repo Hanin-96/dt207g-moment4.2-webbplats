@@ -27,7 +27,7 @@ async function register(event) {
 
         //Fetch anrop för att logga in
         try {
-            const response = await fetch("http://192.168.0.137:3000/register", {
+            const response = await fetch("https://dt207g-moment4-1.onrender.com/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -43,9 +43,10 @@ async function register(event) {
             const data = await response.json();
             if (response.ok) {
                 //Redirect till startsida
-                window.location.replace("http://localhost:1234/login.html");
+                window.location.replace("/login.html");
             } else {
-                document.getElementById("error-submit").innerHTML = "Det går inte att registrera ny användare: " + data.error;
+                console.log(data.error)
+                document.getElementById("error-submit").innerHTML = "Det går inte att registrera ny användare: " + "Epost/användarnamn finns redan";
             }
 
         } catch {
