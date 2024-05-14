@@ -24,7 +24,7 @@ async function loadUsers() {
         //Vid lyckad inloggning skrivs datan ut på användarsidan
         const data = await response.json();
 
-        console.log(data);
+        //console.log(data);
 
         displayUsers(data.users);
         loadImage();

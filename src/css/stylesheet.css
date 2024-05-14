@@ -105,6 +105,19 @@ button:hover {
     font-size: 1.6rem;
 }
 
+/*login page*/
+#error-login, #error-submit {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(34, 34, 34);
+    width: fit-content;
+}
+
+.message-link {
+    font-size: 1.6rem;
+}
+
 /*user page*/
 
 .section-wrap {

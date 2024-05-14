@@ -29,7 +29,7 @@ async function login(event) {
             })
         });
         const data = await response.json();
-        console.log(data);
+        //console.log(data);
         if (response.ok) {
             //Redirect till startsida
             localStorage.setItem('token', data.response.token);
