@@ -43,7 +43,7 @@ async function register(event) {
             const data = await response.json();
             if (response.ok) {
                 //Redirect till startsida
-                window.location.replace("/login.html");
+                window.location.replace("/index.html");
             } else {
                 console.log(data.error)
                 document.getElementById("error-submit").innerHTML = "Det går inte att registrera ny användare: " + "Epost/användarnamn finns redan";
