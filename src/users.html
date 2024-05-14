@@ -10,12 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="js/users.js"></script>
+    <script src="js/users.js" type="module"></script>
 </head>
 
 <body>
     <main>
-        <h1>Secret page</h1>
+        <section class="section-wrap">
+            <h1><span id="usernameId"></span> är inloggad</h1>
+            <div id="image-user"></div>
+            <h2>Alla användare</h2>
+            <div class="users-wrap"></div>
+
+            <button type="button" id="btn-logout">Logga ut</button>
+        </section>
     </main>
 
 </body>

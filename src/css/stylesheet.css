@@ -53,7 +53,7 @@ main {
 }
 
 section {
-    max-width: 30rem;
+    max-width: 35rem;
     width: 100%;
     margin: 0 auto;
 }
@@ -62,6 +62,12 @@ h1 {
     font-size: 3.6rem;
     margin: 0 auto;
     width: fit-content;
+}
+
+h2 {
+    font-size: 2.8rem;
+    width: fit-content;
+    margin: 2rem auto 1rem auto;
 }
 
 label {
@@ -97,4 +103,36 @@ button:hover {
 
 .message-link {
     font-size: 1.6rem;
+}
+
+/*user page*/
+
+.section-wrap {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    animation: fading forwards 2s ease-in-out;
+}
+.users-wrap p{
+    padding: 1rem;
+    border: 2px solid #fdac8e;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    margin: 2rem auto;
+}
+
+@keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
